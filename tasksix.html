@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 6</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .header td {
+        border: 1px solid #000;
+        height: 30px;
+      }
+      .green-bar {
+        background-color: #5d734a;
+        height: 40px;
+      }
+      .blue-footer {
+        background-color: #223b6d;
+        height: 40px;
+      }
+      .image-cell {
+        text-align: center;
+        padding: 20px;
+      }
+      .image-cell img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .side {
+        width: 25%;
+      }
+      .middle {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr class="header">
+        <td class="side" rowspan="5"></td>
+        <td class="middle"></td>
+        <td class="side" rowspan="5"></td>
+      </tr>
+      <tr class="header">
+        <td></td>
+      </tr>
+      <tr class="header">
+        <td></td>
+      </tr>
+      <tr class="header">
+        <td></td>
+      </tr>
+      <tr class="header">
+        <td></td>
+      </tr>
+
+      <tr>
+        <td colspan="3" class="green-bar"></td>
+      </tr>
+
+      <tr>
+        <td class="side"></td>
+        <td class="middle image-cell">
+          <img src="image2.jpg" alt="Blue Frog" />
+        </td>
+        <td class="side"></td>
+      </tr>
+
+      <tr>
+        <td colspan="3" class="blue-footer"></td>
+      </tr>
+    </table>
+
+     <div style="text-align: center; padding: 20px; border: 1px solid #000;">
+        <p style="font-size: 20px; font-weight: bold;">GO TO</p>
+        <button onclick="history.back()" style="margin-right: 10px; padding: 10px; font-size: 16px;">Back</button>
+        <a href="taskseven.html" style="text-decoration: none;">
+            <button style="padding: 10px; font-size: 16px;">Task-7</button>
+        </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 10</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 70%;
+        height: 300px;
+        display: flex;
+        margin: 0px 15%;
+        flex-direction: column;
+      }
+
+      .name-bar {
+        padding: 10px;
+        font-size: 14px;
+        color: gray;
+      }
+
+      .content {
+        display: flex;
+        height: 100%;
+      }
+
+      .left {
+        flex: 2;
+        background-color: rgb(233, 162, 162);
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+      }
+
+      .left img {
+        height: 55%;
+        width: 55%;
+        top: 20%;
+        margin-left: -170px;
+        position: relative;
+        left: 0;
+      }
+
+      .right {
+        flex: 1;
+        background-color: #00bfff;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      .full-width {
+        width: 100%;
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .grid-item {
+        background-color: grey;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+      }
+      .gri-container {
+        display: grid;
+        width: 70%;
+        margin: auto;
+        grid-template-rows: auto auto auto; /* Defines rows */
+        gap: 10px;
+        margin-top: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="name-bar">Chris Tomlin</div>
+      <div class="content">
+        <div class="left">
+          <img src="person.jfif" alt="Chris Tomlin" />
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
+
+    <div class="gri-container">
+      <div class="full-width"></div>
+
+      <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div>
+
+      <div class="full-width"></div>
+    </div>
+    <div style="text-align: center; padding: 20px; border: 1px solid #000;">
+        <p style="font-size: 20px; font-weight: bold;">GO TO</p>
+        <button onclick="history.back()" style="margin-right: 10px; padding: 10px; font-size: 16px;">Back</button>
+        <a href="taskeleven.html" style="text-decoration: none;">
+            <button style="padding: 10px; font-size: 16px;">Task-11</button>
+        </a>
+    </div>
+  </body>
+</html>

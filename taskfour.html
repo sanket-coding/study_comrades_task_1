@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      select {
+        font-size: 16px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Academic Departments</h1>
+
+    <label for="department">Select Department:</label>
+    <select id="department">
+      <option selected disabled>Choose a department</option>
+      <option>Arts</option>
+      <option>Science</option>
+      <option>Commerce</option>
+    </select>
+
+    <br /><br />
+
+    <label for="courses">Select Course:</label>
+    <select id="courses" onchange="location = this.value;">
+      <option selected disabled>Choose a course</option>
+      <optgroup label="Arts">
+        <option value="english.html">English</option>
+        <option value="sociology.html">Sociology</option>
+      </optgroup>
+      <optgroup label="Science">
+        <option value="computer_science.html">Computer Science</option>
+        <option value="mathematics.html">Mathematics</option>
+      </optgroup>
+      <optgroup label="Commerce">
+        <option value="accounting.html">Accounting</option>
+        <option value="economics.html">Economics</option>
+      </optgroup>
+    </select>
+
+     <div style="text-align: center; padding: 20px; border: 1px solid #000;">
+        <p style="font-size: 20px; font-weight: bold;">GO TO</p>
+        <button onclick="history.back()" style="margin-right: 10px; padding: 10px; font-size: 16px;">Back</button>
+        <a href="taskfive.html" style="text-decoration: none;">
+            <button style="padding: 10px; font-size: 16px;">Task-5</button>
+        </a>
+    </div>
+  </body>
+</html>
